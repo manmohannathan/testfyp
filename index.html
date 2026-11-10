@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#102a32">
+    <meta name="description" content="Discover Labuan landmarks through interactive browser AR. No app installation needed.">
+
+    <title>Labuan Legends AR — Heritage Within Reach</title>
+
+    <!-- Styles and scripts -->
+    <link rel="stylesheet" href="./coding/styles.css">
+    <script src="./libs/mindar/mindar-image-three.prod.js" defer></script>
+    <script src="./coding/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#places">Skip to landmarks / Terus ke mercu tanda</a>
+    <!-- Front page. Artwork and styling are separate from the AR experience. -->
+    <main id="landing">
+      <header class="landing-nav">
+        <a class="landing-brand" href="#landing" aria-label="Labuan Legends home"><span class="brand-symbol" aria-hidden="true">✳</span><span>Labuan<br><b>Legends<span class="brand-ar">AR</span></b></span></a>
+        <nav class="landing-links" aria-label="Main navigation"><a href="#places" data-i18n="browse"></a><a href="#how-it-works" data-i18n="howItWorks"></a></nav>
+        <div class="landing-preferences"><label class="sr-only" for="landing-language">Language / Bahasa</label><select id="landing-language"><option value="en">EN</option><option value="ms">BM</option></select><button id="landing-passport" data-i18n="passport"></button></div>
+      </header>
+      <section class="landing-hero">
+        <div class="hero-copy">
+          <p class="eyebrow hero-kicker"><span class="live-dot" aria-hidden="true"></span><span data-i18n="heroKicker"></span></p>
+          <h1 data-i18n="heroTitle"></h1>
+          <p class="hero-intro" data-i18n="heroIntro"></p>
+          <div class="start-actions"><button id="start-ar" class="primary"><span class="camera-icon" aria-hidden="true">◎</span><span data-i18n="start"></span><span aria-hidden="true">↗</span></button><button id="start-preview" data-i18n="preview"></button></div>
+          <div class="hero-benefits"><span data-i18n="noApp"></span><span data-i18n="twoWays"></span></div>
+          <p id="startup-status" role="status" aria-live="polite"></p>
+          <noscript>Please enable JavaScript to use the camera or 3D viewer.</noscript>
+        </div>
+        <figure class="hero-poster"><span class="poster-orbit" aria-hidden="true"></span><div class="poster-top"><span>LABUAN / MALAYSIA</span><span>COLLECTION / 004</span></div><img src="./assets/illustrations/island-collection.svg" alt="Original illustrated island composition with four Labuan landmarks" width="900" height="850" fetchpriority="high"><figcaption><span data-i18n="heroArtLabel"></span><span aria-hidden="true">✳</span></figcaption></figure>
+      </section>
+      <section class="experience-strip" aria-labelledby="value-title">
+        <div class="experience-intro"><p class="eyebrow" data-i18n="experienceKicker"></p><h2 id="value-title" data-i18n="experienceTitle"></h2></div>
+        <div class="experience-values"><article><span class="value-number">01 / VIEW</span><h3 data-i18n="valueOne"></h3><p data-i18n="valueOneText"></p></article><article><span class="value-number">02 / DISCOVER</span><h3 data-i18n="valueTwo"></h3><p data-i18n="valueTwoText"></p></article><article><span class="value-number">03 / REMEMBER</span><h3 data-i18n="valueThree"></h3><p data-i18n="valueThreeText"></p></article></div>
+      </section>
+      <section id="places" class="places-section" aria-labelledby="places-title"><div class="section-heading"><div><p class="eyebrow" data-i18n="collectionKicker"></p><h2 id="places-title" data-i18n="collectionTitle"></h2></div><p data-i18n="collectionIntro"></p></div><div class="landmark-cards"><article class="place-card"><div class="place-art"><img src="./assets/illustrations/umskal.svg" alt="Illustration of UMSKAL" width="800" height="600" loading="lazy"><span class="place-number">01</span></div><div class="place-copy"><span class="eyebrow" data-i18n="campusType"></span><h3>UMSKAL</h3><p data-i18n="campusCard"></p><button data-preview="umslic"><span data-i18n="view3D"></span><span aria-hidden="true">↗</span></button></div></article><article class="place-card"><div class="place-art"><img src="./assets/illustrations/clock-tower.svg" alt="Illustration of Clock Tower" width="800" height="600" loading="lazy"><span class="place-number">02</span></div><div class="place-copy"><span class="eyebrow" data-i18n="heritageType"></span><h3>Clock Tower</h3><p data-i18n="clockCard"></p><button data-preview="labuanclocktower"><span data-i18n="view3D"></span><span aria-hidden="true">↗</span></button></div></article><article class="place-card"><div class="place-art"><img src="./assets/illustrations/surrender-point.svg" alt="Illustration of Surrender Point" width="800" height="600" loading="lazy"><span class="place-number">03</span></div><div class="place-copy"><span class="eyebrow" data-i18n="memorialType"></span><h3>Surrender Point</h3><p data-i18n="surrenderCard"></p><button data-preview="surrenderpoint"><span data-i18n="view3D"></span><span aria-hidden="true">↗</span></button></div></article><article class="place-card"><div class="place-art"><img src="./assets/illustrations/sea-sport-complex.svg" alt="Illustration of Sea Sport Complex" width="800" height="600" loading="lazy"><span class="place-number">04</span></div><div class="place-copy"><span class="eyebrow" data-i18n="coastType"></span><h3>Sea Sport Complex</h3><p data-i18n="liscCard"></p><button data-preview="lisc"><span data-i18n="view3D"></span><span aria-hidden="true">↗</span></button></div></article></div><p class="art-note" data-i18n="artNote"></p></section>
+      <section id="how-it-works" class="how-section" aria-labelledby="how-title"><div class="how-intro"><span class="eyebrow">01 / 02 / 03</span><h2 id="how-title" data-i18n="howItWorks"></h2><button id="markers-btn" class="link" data-i18n="markers"></button></div><ol class="how-steps"><li><span>01</span><h3 data-i18n="stepOne"></h3><p data-i18n="stepOneText"></p></li><li><span>02</span><h3 data-i18n="stepTwo"></h3><p data-i18n="stepTwoText"></p></li><li><span>03</span><h3 data-i18n="stepThree"></h3><p data-i18n="stepThreeText"></p></li></ol></section>
+      <footer><span class="wordmark">Labuan Legends <em>AR</em></span><span><span data-i18n="editionLabel"></span><small class="prototype-note" data-i18n="prototypeNote"></small></span><a href="#landing" aria-label="Back to top">↑</a></footer>
+    </main>
+
+    <!-- AR and 3D experience -->
+    <main id="experience" hidden>
+      <header class="app-header">
+        <!-- Navigation -->
+        <div class="header-row">
+          <button id="exit-btn" class="quiet" data-i18n="back">← Home</button>
+          <span class="wordmark">Labuan Legends <em>AR</em></span>
+          <button id="passport-btn" class="quiet" data-i18n="passport">My passport</button>
+        </div>
+
+        <!-- Language and theme preferences -->
+        <div class="header-row preferences">
+          <span id="mode-label" class="badge"></span>
+
+          <div class="row">
+            <button id="fullscreen-btn" class="quiet" data-i18n="fullscreen" hidden>Full screen</button>
+            <label class="sr-only" for="lang-select">Language / Bahasa</label>
+            <select id="lang-select">
+              <option value="en">English</option>
+              <option value="ms">Melayu</option>
+            </select>
+            <button id="theme-toggle-btn" class="quiet" data-i18n="theme">Change theme</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Interactive landmark viewer -->
+      <section id="stage" aria-label="Interactive landmark viewer">
+        <div id="ar-container"></div>
+        <div id="hotspots" aria-label="Discovery points"></div>
+
+        <div class="stage-status">
+          <span class="dot"></span>
+          <span id="tracking-status" role="status"></span>
+        </div>
+
+        <div id="scan-guide" hidden>
+          <div class="scan-frame"></div>
+          <p data-i18n="scan">Point your camera at a marker</p>
+        </div>
+
+        <div class="view-tools">
+          <button id="zoom-out" aria-label="Zoom out">−</button>
+          <button id="reset-view" data-i18n="reset">Reset view</button>
+          <output id="zoom-level" aria-label="Model zoom">1.0×</output>
+          <button id="zoom-in" aria-label="Zoom in">+</button>
+        </div>
+        <p id="scan-distance" class="scan-distance" role="status" aria-live="polite"></p>
+      </section>
+
+      <div id="ar-dock" hidden>
+        <button id="sheet-toggle" aria-controls="controls" aria-expanded="false" data-i18n="controls">Explore &amp; listen</button>
+        <button id="audio-unlock" data-i18n="audio" hidden>Play narration</button>
+      </div>
+      <!-- Landmark controls and discovery content -->
+      <section id="controls" aria-label="Landmark interactions">
+        <button id="sheet-close" class="quiet" data-i18n="hideControls" hidden>Hide controls</button>
+        <div class="landmark-heading">
+          <div>
+            <span id="collection-progress" class="eyebrow"></span>
+            <h2 id="landmark-title"></h2>
+          </div>
+          <button id="replay-btn" class="quiet" data-i18n="replay">Replay reveal</button>
+        </div>
+
+        <div id="target-picker" class="row"></div>
+        <p id="gesture-hint" class="small" data-i18n="gesture">Drag to rotate · Pinch to zoom · Tap a numbered point</p>
+
+        <div class="action-grid">
+          <button id="discover-btn" data-i18n="discover">Discover</button>
+          <button id="story-btn" data-i18n="story">Watch video</button>
+          <button id="info-btn" data-i18n="info">View info</button>
+          <button id="narrator-btn" data-i18n="audio">Play narration</button>
+        </div>
+
+        <p id="audio-note" class="small"></p>
+
+        <!-- Detail panel -->
+        <section id="detail-panel" hidden aria-labelledby="detail-title">
+          <div class="panel-heading">
+            <span id="detail-kicker" class="eyebrow"></span>
+            <button id="close-detail" class="quiet" aria-label="Close details">✕</button>
+          </div>
+
+          <h3 id="detail-title"></h3>
+          <div id="detail-body"></div>
+        </section>
+
+        <p id="feedback" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <!-- Shared journal dialog -->
+    <dialog id="journal-dialog" aria-labelledby="dialog-title">
+      <div class="panel-heading">
+        <span class="eyebrow">LABUAN LEGENDS</span>
+        <button id="close-dialog" class="quiet" aria-label="Close dialog">✕</button>
+      </div>
+
+      <h2 id="dialog-title"></h2>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

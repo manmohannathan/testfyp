@@ -1,0 +1,163 @@
+// Faithfully transcribed from the four supplied English DOCX files.
+export const MUSEUM = {
+  "umslic": {
+    "title": "UMSKAL",
+    "subtitle": "Universiti Malaysia Sabah Labuan International Campus",
+    "intro": "UMSKAL is the first branch campus of Universiti Malaysia Sabah. Set beside the South China Sea, it connects higher education with Labuan’s international business, finance and digital economy.",
+    "sections": [
+      {
+        "title": "History",
+        "text": "The campus began operating on 2 January 1999. Its official profile records a first intake of 356 students in May that year. The university developed programmes in international business, finance and information technology to support Labuan’s economic role and widen access to higher education."
+      },
+      {
+        "title": "How the campus developed",
+        "text": "UMSKAL grew from a government building project repurposed for education. In November 1998, Parliament recorded the decision to transfer the federal shared office building project and a government staff housing complex to UMS. The housing was intended to become student accommodation. The Labuan Development Authority had built that housing with federal funding."
+      },
+      {
+        "title": "A change of purpose",
+        "text": "This is an example of adapting planned public infrastructure for a new use: office space became part of a university setting, while housing supported residential student life. The campus story is therefore about both buildings and the people who use them."
+      },
+      {
+        "title": "The campus today",
+        "text": "UMSKAL remains an active teaching and research campus. Its academic areas include the Labuan Faculty of International Finance and the Faculty of Computing and Informatics. Subjects range from international and Islamic finance to marketing, business computing and multimedia technology."
+      },
+      {
+        "title": "Learning beyond the classroom",
+        "text": "The Labuan campus library was established in 1999 to support these fields. Recent campus news also records school visits, research activities and student volunteering, showing how the university connects with the wider island community."
+      },
+      {
+        "title": "What to notice",
+        "text": "Look at the relationship between the campus buildings, student spaces and coastal setting. The university describes this seafront environment as part of its learning atmosphere. When visiting, keep teaching areas quiet and ask before photographing people or entering academic and residential buildings."
+      },
+      {
+        "title": "Plan your visit",
+        "text": "Location: Jalan Sungai Pagar, 87000 Federal Territory of Labuan, Malaysia, approximately 18 km from Labuan town.\n\nArrange a campus or school visit with the administration before travelling. Ask about entry procedures, permitted areas, visit times and any programme charges. For a first visit, a taxi or arranged vehicle is a practical option.\n\nSuggested visit: allow 45–90 minutes for an agreed visit. Wear comfortable shoes and bring water. Ask in advance about step-free routes, lifts, toilets, parking and assistance suited to your group."
+      },
+      {
+        "title": "Contact information",
+        "text": "Campus administration\nTelephone +60 87 503 000\nEmail adminkal@ums.edu.my\nWebsite www.ums.edu.my/umskal/\n\nFor prospective students, use the official university pages for current courses and entry requirements. Academic facilities and accommodation have their own access arrangements."
+      }
+    ]
+  },
+  "labuanclocktower": {
+    "title": "Labuan Clock Tower",
+    "subtitle": "Menara Jam Labuan",
+    "intro": "The tower seen today is a 2002 reconstruction of a clock tower first built in 1906. It recalls the civic life of old Victoria, now Bandar Labuan, and a landmark that remained standing amid the destruction of 1945.",
+    "sections": [
+      {
+        "title": "The original tower",
+        "text": "The first clock tower was built in 1906 with the support of Chee Swee Cheng, a businessman and philanthropist from Malacca. It formed part of the old town hall frontage and provided a visible public landmark in Victoria."
+      },
+      {
+        "title": "War and loss",
+        "text": "The Australian War Memorial preserves a 1945 drawing by William Edwin Pidgeon showing the tower after the devastation of the town. This contemporary record helps explain why the tower is remembered as a survivor of wartime destruction.\n\nThe British administration demolished the original tower in 1948. The structure standing today therefore does not contain the complete original tower that survived the war."
+      },
+      {
+        "title": "Dates to remember",
+        "text": "1906 Original clock tower built\n1945 Tower recorded amid wartime ruins\n1948 Original tower demolished\n2002 Replica reconstructed"
+      },
+      {
+        "title": "How it was rebuilt",
+        "text": "Perbadanan Labuan reconstructed the clock tower in 2002 using funding from Malaysia’s Ministry of Tourism. The corporation states that the rebuilding followed the design and dimensions of the original structure."
+      },
+      {
+        "title": "Reading the architecture",
+        "text": "Look at the tower’s tall proportions and the way its clock faces sit above the arched lower section. The composition makes time visible from the surrounding public space. Compare the reconstructed form with historical images to see how a familiar outline can preserve a town’s memory."
+      },
+      {
+        "title": "The tower today",
+        "text": "The tower is a heritage landmark and a photographic stop opposite the International Sea Sports Complex. It also helps visitors connect the town’s past with its present waterfront setting.\n\nIts value lies in recalling a lost civic structure. A reconstruction can retain the appearance and public meaning of an earlier building while belonging to a different period of construction."
+      },
+      {
+        "title": "Plan your visit",
+        "text": "Location: Jalan Tanjung Purun, Bandar Labuan, opposite the International Sea Sports Complex and close to the Marine Museum.\n\nOutdoor viewing is listed as free and accessible at any time. Daylight is best for examining details; follow local signs and maintenance barriers. Suggested visit: 10–20 minutes.\n\nApproach on foot from nearby waterfront attractions or arrange a taxi drop-off. Cross the road carefully. Enjoy the exterior from public paths and do not climb the structure. Ask the local authority about step-free access and current parking arrangements."
+      },
+      {
+        "title": "Nearby facilities",
+        "text": "Food outlets and visitor facilities are available in the surrounding Sea Sports Complex area; their hours may differ from outdoor tower access. Combine the stop with the Marine Museum for a longer waterfront visit."
+      },
+      {
+        "title": "Contact information",
+        "text": "Local authority and visitor enquiries\nPerbadanan Labuan\nOperator +60 87 408 600\nCustomer service +60 87 408 601\nWebsite www.pl.gov.my"
+      }
+    ]
+  },
+  "lisc": {
+    "title": "Labuan International Sea Sports Complex",
+    "subtitle": "Kompleks Sukan Laut Antarabangsa Labuan",
+    "intro": "On the Tanjung Purun waterfront, this complex brings together sea sports, public events and marine education. Its waterfront spaces and Marine Museum introduce visitors to Labuan’s relationship with the sea.",
+    "sections": [
+      {
+        "title": "History and purpose",
+        "text": "The complex began operating in June 2001. Contemporary reporting on the Auditor-General’s findings put its development cost at RM25 million. It was created to provide a venue for water sports and activities supporting Labuan’s tourism economy."
+      },
+      {
+        "title": "How it was developed",
+        "text": "The site was planned as several linked structures around a main viewing plaza, combining sports facilities, administration and visitor spaces. This arrangement allows people on land to gather and watch activities on the water.\n\nThe Marine Museum was added within space offered by Labuan Corporation. Its fit-out ran from August 2001 to July 2002, and it was officially opened on 26 January 2003. These museum dates are separate from the complex’s 2001 opening."
+      },
+      {
+        "title": "What to notice",
+        "text": "Look for the connection between the buildings, viewing areas and shoreline. Inside the museum, the gallery design draws on the structure of a naval ship, linking the visitor experience to the sea."
+      },
+      {
+        "title": "The complex today",
+        "text": "The site continues to appear in Labuan’s major event calendar. Tourism Malaysia listed the 28th Labuan International Sea Challenge here for 28 April–3 May 2026, with deep-sea fishing, kayaking, regatta racing and cross-channel swimming among the advertised competitions."
+      },
+      {
+        "title": "More than competition",
+        "text": "The complex also accommodates public celebrations and exhibitions. Labuan Corporation lists spaces for hire, including its exhibition gallery and beach zones. Event activity varies, so a normal day may be quieter than festival photographs suggest."
+      },
+      {
+        "title": "Explore the Marine Museum",
+        "text": "The museum introduces marine biodiversity, shipwrecks and fishing heritage. It provides context for understanding the waters around Labuan, with specimens and displays about the relationship between people and marine environments.\n\nCombine a museum visit with the waterfront and the Clock Tower across the road. Allow extra time if attending a scheduled event."
+      },
+      {
+        "title": "Plan your visit",
+        "text": "Location: Jalan Tanjung Purun, Bandar Labuan, beside Tanjung Purun Beach. Use the full complex name when arranging transport.\n\nSuggested visit: 45–90 minutes for the museum and waterfront. Public spaces, events and commercial activities have separate arrangements; confirm any booking requirements or charges.\n\nMarine Museum: 9 am–5 pm daily, free admission. Published closures are the first two days of Hari Raya Aidilfitri and first day of Hari Raya Aidiladha; reconfirm holiday access. Parking, toilets, a prayer room and food facilities are listed. Ask about step-free access between gallery levels."
+      },
+      {
+        "title": "Contact information",
+        "text": "Venue and event enquiries\nPerbadanan Labuan\n+60 87 408 600 / +60 87 408 601\nwww.pl.gov.my\n\nMarine Museum\n+60 87 425 927\ninfo@jmm.gov.my\nwww.jmm.gov.my\n\nFor water activities, check the operator’s schedule, weather restrictions, supervision and lifejacket provision before booking."
+      }
+    ]
+  },
+  "surrenderpoint": {
+    "title": "Labuan Surrender Point",
+    "subtitle": "A memorial to the end of Japanese military command in North Borneo",
+    "intro": "This coastal memorial commemorates the surrender accepted on 10 September 1945 by Australian Major General George F. Wootten from Japanese Lieutenant General Masao Baba. It links Labuan’s wartime experience with remembrance and peace today.",
+    "sections": [
+      {
+        "title": "The event remembered here",
+        "text": "Baba commanded Japan’s 37th Army and Wootten led Australia’s 9th Division. This was one of several regional ceremonies concluding the Pacific war."
+      },
+      {
+        "title": "Understanding the history",
+        "text": "The ceremony was a major turning point for North Borneo. It belongs within a wider story of occupation, fighting and the return of civilian life. The nearby Peace Park gives visitors another place to reflect on the human cost of war. Surrender Point and Peace Park are neighbouring memorial sites with distinct histories."
+      },
+      {
+        "title": "A place for reflection",
+        "text": "Read the memorial panels slowly. Consider what the end of military conflict meant for local families, servicemen and communities rebuilding their lives. The site’s importance comes from the event it commemorates and the continuing responsibility to remember it."
+      },
+      {
+        "title": "How the memorial was built",
+        "text": "Australia’s Department of Veterans’ Affairs commissioned Guida Moseley Brown Architects in August 2021. The old memorial was removed by October 2022; First Reign Sdn Bhd built its replacement."
+      },
+      {
+        "title": "Materials with meaning",
+        "text": "Granite information panels are mounted on a curved wall. Australian granite was combined with Malaysian stone retained from the earlier memorial, giving the structure a physical link to both countries."
+      },
+      {
+        "title": "The site today",
+        "text": "The Department of Veterans’ Affairs announced the memorial’s reopening on 26 April 2024. Visitors now encounter the renewed memorial rather than the older structure shown in many historic tourism photographs.\n\nNotice the curve of the wall, the inscribed surfaces and the relationship between the memorial and its coastal surroundings."
+      },
+      {
+        "title": "Plan your visit",
+        "text": "Location: Kampung Layang-Layangan, on Labuan’s western coast, beside Peace Park and overlooking the South China Sea.\n\nOutdoor access is listed as free, with no fixed visiting hours. Daylight is recommended for reading the panels; follow any local closure notices. Suggested visit: 20–30 minutes, or longer with Peace Park.\n\nTravel by taxi or arranged vehicle and plan your return journey. Bring water, sun protection and an umbrella. Ask the local authority about current parking, accessible routes and toilet availability. Keep the setting quiet, avoid climbing the memorial and leave flowers only where permitted."
+      },
+      {
+        "title": "Contact information",
+        "text": "Local visitor and site enquiries\nPerbadanan Labuan\nOperator +60 87 408 600\nCustomer service +60 87 408 601\nWebsite www.pl.gov.my \n\nMemorial background\nAustralian Department of Veterans’ Affairs\nWebsite www.dva.gov.au"
+      }
+    ]
+  }
+};

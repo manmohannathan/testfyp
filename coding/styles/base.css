@@ -1,0 +1,196 @@
+/* Theme variables */
+
+:root {
+  color-scheme: light;
+  --paper: #fcf8ef;
+  --surface: #fffdf8;
+  --ink: #283b33;
+  --muted: #65746b;
+  --line: #d9dccf;
+  --accent: #275642;
+  --on-accent: #fff;
+  --wash: #eef0e5;
+  --gold: #a47835;
+  --heading: Georgia,'Times New Roman',serif;
+}
+
+/* Base styles and modern theme */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 15px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+body.theme-modern {
+  --paper: #101b25;
+  --surface: #1b2a38;
+  --ink: #f1f5f7;
+  --muted: #b4c7d4;
+  --line: #3c5265;
+  --accent: #c0dbea;
+  --on-accent: #172b38;
+  --wash: #263a49;
+  --gold: #e2c785;
+  --heading: system-ui,sans-serif;
+  color-scheme: dark;
+}
+
+/* Visibility, buttons, and form controls */
+
+[hidden] {
+  display: none!important;
+}
+
+button,
+select {
+  font: inherit;
+  color: inherit;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 10px 15px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover:not(:disabled) {
+  background: var(--wash);
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: .48;
+  cursor: default;
+}
+
+button.primary,
+button[aria-pressed=true] {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
+
+button.primary:hover:not(:disabled) {
+  filter: brightness(.94);
+  background: var(--accent);
+}
+
+button[aria-pressed=true]:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+button.quiet {
+  border-color: transparent;
+  background: transparent;
+}
+
+button.link {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+button:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Typography and shared utilities */
+
+a {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(34px,6vw,62px);
+  line-height: 1.06;
+  letter-spacing: -.045em;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+p+p {
+  margin-top: 12px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .16em;
+  font-weight: 650;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.small {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-family: var(--heading);
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.wordmark em {
+  font: 10px system-ui;
+  color: var(--gold);
+  letter-spacing: .1em;
+  margin-left: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+

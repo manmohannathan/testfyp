@@ -1,0 +1,42 @@
+/* Small overlays reuse the museum palette. No extra fonts, photos or libraries. */
+#interact-btn {background:var(--accent);color:var(--on-accent);border-color:var(--accent);}
+.interactions-panel {position:fixed;right:max(12px,env(safe-area-inset-right));top:calc(124px + env(safe-area-inset-top));width:min(390px,calc(100vw - 92px));max-height:calc(100dvh - 235px - env(safe-area-inset-top) - env(safe-area-inset-bottom));z-index:10;overflow-y:auto;overscroll-behavior:contain;padding:18px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:24px;box-shadow:0 15px 50px #183b3140;animation:gallery-enter .2s ease-out;}
+.interactions-header {display:flex;align-items:center;gap:10px;justify-content:space-between;position:sticky;top:-18px;padding:8px 0;background:var(--paper);z-index:2;}
+.interactions-header h2 {font:26px/1.1 var(--heading);letter-spacing:-.03em;margin:0;}
+.interactions-header button {font-size:23px;padding:4px 10px;flex-shrink:0;}
+.interaction-tabs {display:flex;gap:6px;overflow-x:auto;padding:12px 0;scrollbar-width:thin;}
+.interaction-tabs button {white-space:nowrap;min-height:38px;padding:7px 11px;font-size:12px;border-radius:22px;}
+.interaction-tabs button[aria-pressed=true],.interaction-choices button[aria-pressed=true],.timeline-dates button[aria-pressed=true] {background:var(--accent);color:var(--on-accent);}
+.interaction-view {display:block;width:100%;min-height:36px;padding:6px 10px;border-radius:20px;font-size:12px;background:var(--wash);}
+.interaction-description {font-size:14px;line-height:1.6;}
+.interaction-note {font-size:11px;line-height:1.6;color:var(--muted);border-left:3px solid var(--gold);padding-left:10px;margin:16px 0 0;}
+.interaction-content label {display:block;font-size:12px;margin:15px 0 5px;}
+.interaction-content input[type=range] {width:100%;accent-color:var(--accent);min-height:40px;}
+.interaction-content select {width:100%;font-size:13px;}
+.interaction-content output {display:block;font-size:12px;margin-bottom:12px;color:var(--muted);}
+.interaction-choices {display:grid;gap:7px;margin:12px 0;}
+.interaction-choices button {font-size:13px;text-align:left;}
+.timeline-dates {display:flex;gap:6px;flex-wrap:wrap;margin:10px 0;}
+.timeline-dates button {font-size:12px;flex:1;padding:8px;}
+.timeline-card {background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:17px;margin-top:12px;}
+.timeline-year {font:35px/1.1 var(--heading);color:var(--accent);}
+.timeline-card h3 {font:22px/1.2 var(--heading);margin:15px 0 8px;}
+.timeline-card p {font-size:14px;line-height:1.7;}
+.floor-study-picker {display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:16px;}
+.floor-study-picker button {padding:6px;font-size:13px;}
+.route-status {font-size:12px;color:var(--muted);}
+.interaction-hud {position:absolute;z-index:5;left:82px;bottom:74px;max-width:calc(100% - 98px);display:flex;align-items:center;gap:6px;padding:5px 8px 5px 12px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:25px;box-shadow:0 5px 20px #23463720;font-size:11px;}
+.interaction-hud button {min-height:32px;min-width:32px;padding:0;border:0;background:transparent;font-size:19px;}
+.interaction-hud .interaction-hud-open {font-size:11px;text-align:left;}
+.ar-mode .interaction-hud {bottom:calc(140px + env(safe-area-inset-bottom));}
+.feature-label {position:absolute;pointer-events:none;transform:translate(-50%,-100%);padding:6px 10px;max-width:180px;background:#214e40f2;color:#fff;border:1px solid #ffffffa0;border-radius:10px;font-size:11px;line-height:1.4;text-align:center;box-shadow:0 3px 12px #0002;}
+.feature-label::after {content:'';position:absolute;left:50%;top:100%;height:22px;border-left:1px solid #e6b55a;}
+@media(min-width:1000px){.interactions-panel{right:28px;width:390px;}.interaction-tabs{flex-wrap:wrap;overflow:visible;}}
+@media(max-width:700px) and (min-height:551px){.interactions-panel{top:auto;bottom:calc(80px + env(safe-area-inset-bottom));left:12px;right:12px;width:auto;max-height:44dvh;}.interaction-hud{bottom:66px;}}
+@media(max-width:380px){.interactions-panel{padding:13px;}.interactions-header h2{font-size:22px;}.timeline-year{font-size:29px;}}
+@media(max-height:550px){.interactions-panel{top:65px;max-height:calc(100dvh - 145px);width:min(390px,48vw);}.ar-mode .interaction-hud{left:10px;bottom:130px;max-width:42vw;}}
+@media(prefers-reduced-motion:reduce){.interactions-panel{animation:none;}}
+
+.timeline-status {font-size:14px;line-height:1.65;padding:12px;background:var(--wash);border-radius:12px;}
+.concept-disclosure {font-size:12px;line-height:1.6;border-left:3px solid var(--gold);padding:10px 12px;background:var(--wash);border-radius:0 10px 10px 0;}
+.timeline-dates button:disabled {opacity:.5;cursor:not-allowed;}

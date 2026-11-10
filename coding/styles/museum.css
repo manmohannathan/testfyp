@@ -1,0 +1,69 @@
+/* Shared museum interior: the same cream, forest green and editorial type as the landing. */
+:root {--paper:#f6f5ed;--surface:#fffef8;--accent:#265d47;--wash:#e8eddf;--gold:#ab7f43;--ink:#233f33;--line:#d6dece;}
+.app-header {background:var(--paper);box-shadow:0 4px 24px #20392b0d;}
+.badge,.eyebrow {letter-spacing:.15em;}
+#controls {background:var(--paper);border-top:1px solid var(--line);padding-bottom:78px;}
+.landmark-heading h2 {font-family:var(--heading);font-size:30px;letter-spacing:-.04em;}
+.action-grid button {border-radius:13px;min-height:52px;background:var(--surface);font-size:13px;}
+.action-grid button:first-child {background:var(--accent);color:var(--on-accent);}
+#target-picker button {font-size:12px;border-radius:30px;}
+#stage {background:radial-gradient(ellipse at 50% 40%,#f8faee,#dce6d3);}
+.stage-status {border-radius:30px;background:var(--paper);padding:6px 12px;}
+.floor-rail {border-radius:22px;background:var(--paper);padding:7px;}
+.floor-rail-list button {min-height:44px;border-radius:12px;}
+.ar-mode .floor-rail:not(.point-rail) .floor-rail-list {flex:1;}
+.ar-mode .floor-rail:not(.point-rail) .floor-rail-list button {flex:1;min-height:28px;padding:2px;}
+.point-rail {bottom:auto!important;}
+.floor-gallery-panel {border-radius:24px 8px 24px 24px;border-top:4px solid var(--accent);padding:18px;animation:gallery-enter .25s ease-out;}
+.floor-gallery-header h2 {font-family:var(--heading);font-size:25px;letter-spacing:-.03em;}
+.floor-gallery-header {position:sticky;top:-18px;background:var(--paper);padding:10px 0;z-index:2;}
+.floor-gallery-about p {white-space:pre-line;}
+.floor-image-viewport {background:#e4e9db;}
+.hotspot {background:var(--accent);box-shadow:0 0 0 5px #ffffff80,0 4px 15px #12352430;}
+.floor-hotspot {width:var(--dot-hit,24px);min-height:var(--dot-hit,24px);height:var(--dot-hit,24px);border:2px solid #fff;font-size:9px;box-shadow:0 0 0 3px #ffffff50;padding:0;}
+.floor-hotspot.compact-dot {font-size:0;}
+.floor-hotspot:focus-visible {outline:3px solid #dcaa42;outline-offset:3px;}
+dialog {border-radius:25px;background:var(--paper);width:min(900px,94vw);padding:28px;}
+dialog::backdrop {background:#142b22a6;backdrop-filter:blur(5px);}
+#dialog-title {font-family:var(--heading);font-size:clamp(29px,5vw,48px);line-height:1.05;letter-spacing:-.04em;max-width:690px;}
+#journal-dialog > .panel-heading {position:sticky;top:-28px;padding:10px 0;background:var(--paper);z-index:2;}
+.museum-label {font-size:10px;letter-spacing:.18em;border-top:1px solid var(--line);padding-top:20px;margin-top:22px;}
+.museum-subtitle {font-style:italic;color:var(--muted);}
+.museum-lead {font-family:var(--heading);font-size:24px;line-height:1.45;max-width:720px;}
+.museum-sections {columns:2 280px;column-gap:35px;border-top:3px solid var(--accent);padding-top:24px;}
+.museum-section {break-inside:avoid;margin-bottom:25px;}
+.museum-section h3 {font-family:var(--heading);font-size:23px;margin:0 0 10px;}
+.museum-section p {font-size:14px;line-height:1.8;white-space:pre-line;margin:0;overflow-wrap:anywhere;}
+.museum-source {font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:20px;}
+.story-video {border:1px solid var(--line);border-radius:17px;padding:16px;background:var(--surface);margin:14px 0;}
+.story-video h4 {font-family:var(--heading);font-size:20px;margin:0 0 15px;}
+.story-video .video-poster {display:block;width:100%;aspect-ratio:16/9;background:radial-gradient(circle at 70% 10%,#416e53,#163e31);color:white;font-size:18px;border-radius:12px;}
+.story-video iframe {width:100%;aspect-ratio:16/9;border:0;border-radius:12px;}
+.story-video a {display:block;font-size:12px;margin-top:10px;}
+.ai-launch {position:fixed;z-index:12;right:max(14px,env(safe-area-inset-right));bottom:calc(14px + env(safe-area-inset-bottom));border-radius:50%;width:58px;height:58px;padding:0;background:var(--accent);color:var(--on-accent);box-shadow:0 5px 25px #193b3a40;border:3px solid var(--paper);}
+.ai-panel {position:fixed;z-index:13;right:max(14px,env(safe-area-inset-right));bottom:calc(84px + env(safe-area-inset-bottom));width:min(410px,calc(100vw - 28px));max-height:calc(100dvh - 130px);overflow-y:auto;overscroll-behavior:contain;background:var(--paper);padding:20px;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:24px;box-shadow:0 15px 60px #173c3540;animation:gallery-enter .25s ease-out;}
+.ai-heading {display:flex;gap:12px;align-items:center;justify-content:space-between;}
+.ai-heading {position:sticky;top:-20px;background:var(--paper);z-index:2;padding:8px 0;}
+.ai-heading h2 {font-family:var(--heading);font-size:28px;margin:0;}
+.ai-heading button {font-size:24px;}
+.ai-subtitle {color:var(--accent);font-size:13px;}
+.ai-notice {font-size:11px;color:var(--muted);line-height:1.5;}
+.ai-messages {display:flex;flex-direction:column;gap:12px;}
+.ai-message {border-radius:14px;padding:12px;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6;}
+.ai-message.user {background:var(--accent);color:var(--on-accent);align-self:flex-end;max-width:90%;}
+.ai-message.assistant {background:var(--surface);border:1px solid var(--line);}
+.ai-citation {display:inline;font-size:12px;padding:2px 4px;background:var(--wash);text-decoration:underline;}
+.ai-suggestions {display:flex;flex-wrap:wrap;gap:6px;margin:14px 0;}
+.ai-suggestions button {font-size:11px;min-height:36px;padding:7px 10px;border-radius:18px;}
+.ai-form {display:flex;gap:8px;align-items:end;}
+.ai-form textarea {min-width:0;width:100%;resize:vertical;max-height:120px;font:inherit;font-size:14px;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);}
+.ai-status {font-size:12px;margin:10px 0 0;}
+.ar-mode #ar-dock {max-width:calc(100vw - 100px);left:12px;transform:none;right:auto;}
+.ar-mode #sheet-toggle {min-width:0;}
+.ar-mode #ar-dock button {font-size:12px;padding:10px;}
+.ar-mode .view-tools {bottom:calc(88px + env(safe-area-inset-bottom));}
+.ar-mode #controls {padding-bottom:80px;}
+@keyframes gallery-enter {from{opacity:0;transform:translateX(25px)}to{opacity:1;transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.floor-gallery-panel,.ai-panel{animation:none;}}
+@media(max-width:600px){dialog{padding:21px;}.museum-lead{font-size:21px;}.landmark-heading h2{font-size:25px;}}
+@media(max-height:550px){.ai-panel{bottom:78px;max-height:calc(100dvh - 94px);}.floor-rail-list button{min-height:36px;}}
